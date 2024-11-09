@@ -1,0 +1,24 @@
+﻿<Window x:Class="NumberGuessingGameWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NumberGuessingGameWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Welcome to this game" HorizontalAlignment="Left" Margin="285,24,0,0" VerticalAlignment="Top" FontFamily="Palatino Linotype" FontSize="16" FontWeight="Bold" Height="35" Width="200"/>
+        <Label Content="Firstly you should set the range" HorizontalAlignment="Left" Margin="50,69,0,0" VerticalAlignment="Top" FontFamily="Palatino Linotype" FontSize="16" FontWeight="Bold" Height="35" Width="255"/>
+        <Label Content="Please enter the mimimum value:" HorizontalAlignment="Left" Margin="50,104,0,0" VerticalAlignment="Top" FontFamily="Palatino Linotype" FontSize="16" FontWeight="Bold" Height="35" Width="255"/>
+        <TextBox x:Name="MinimumValueInput" HorizontalAlignment="Left" Margin="305,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Palatino Linotype" FontSize="16" FontWeight="Bold" Width="120"/>
+        <Label Content="Please enter the maximum value:" HorizontalAlignment="Left" Margin="50,139,0,0" VerticalAlignment="Top" FontFamily="Palatino Linotype" FontSize="16" FontWeight="Bold" Height="35" Width="255"/>
+        <TextBox x:Name="MaximumValueInput" HorizontalAlignment="Left" Margin="305,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Palatino Linotype" FontSize="16" FontWeight="Bold" Width="120"/>
+        <Button x:Name="SetTheRange" Content="Set the range" HorizontalAlignment="Left" Margin="525,143,0,0" VerticalAlignment="Top" FontFamily="Palatino Linotype" FontSize="16" FontWeight="Bold" Width="120" Click="SetTheRange_Click"/>
+        <Label x:Name="label" Content="Now please enter number between minValue and maxValue" HorizontalAlignment="Left" Margin="55,244,0,0" VerticalAlignment="Top" FontFamily="Palatino Linotype" FontSize="16" FontWeight="Bold" Height="35" Width="495"/>
+        <TextBox x:Name="UsernumberInput" HorizontalAlignment="Left" Margin="510,250,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Palatino Linotype" FontSize="16" FontWeight="Bold" Width="120"/>
+        <Button x:Name="Check" Content="Check" HorizontalAlignment="Left" Margin="660,248,0,0" VerticalAlignment="Top" FontFamily="Palatino Linotype" FontSize="16" FontWeight="Bold" Width="120" Click="Check_Click"/>
+        <Label x:Name="Chances" Content="How many chances do you want to have?" HorizontalAlignment="Left" Margin="50,183,0,0" VerticalAlignment="Top" FontFamily="Palatino Linotype" FontSize="16" FontWeight="Bold" Height="35" Width="495"/>
+        <TextBox x:Name="ChancesInput" HorizontalAlignment="Left" Margin="370,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Palatino Linotype" FontSize="16" FontWeight="Bold" Width="120"/>
+
+    </Grid>
+</Window>
